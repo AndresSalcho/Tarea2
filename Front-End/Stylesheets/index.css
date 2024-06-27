@@ -1,0 +1,107 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+
+header.head{
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: url("../../Assets/backg1.jpg");
+    background-size: 100%;
+    background-blend-mode: color;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+ul.list1{
+    display: flex;
+}
+
+li{
+    list-style:none;
+    margin: 10px;
+}
+
+a.abc{
+    color: white;
+    text-decoration: none;
+}
+
+img.imagen{
+    width: 30%;
+}
+
+div.upperblock{
+    display: block;
+    justify-items: center;
+    justify-content: baseline;
+}
+
+div.main{
+    background-color: rgb(248, 248, 248);
+    color: black;
+    padding-bottom: 2%;
+}
+
+div.present{
+    text-align: center;
+}
+
+div.form {
+    background-color: white(20, 20, 20);
+    border-style: ridge;
+    color: black;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    border-radius: 10%;
+}
+
+footer.pie {
+    background-color: rgb(0,0,0);
+    color: white;
+    text-align: center;
+    font-size: small;
+}
+
+button{
+    border-style: solid;
+    color: white;
+    border-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    text-decoration: solid;
+    background-color: black;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: ease-in-out;
+    background-color: gray;
+    border-color: gray;
+    transition: 0.5s;
+    font-size: medium;
+}
+
+select.selec{
+    width: 100%;
+    text-align: center;
+}
+
+input{
+    text-align: center;
+}
+
+p.textt{
+    margin-left: 10%;
+    margin-right: 10%;
+}
