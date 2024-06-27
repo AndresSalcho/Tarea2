@@ -3,7 +3,7 @@ from Factories.User import User
 
 class UserService:
     def __init__(self) -> None:
-        self.con = pyodbc.connect('DRIVER={Microsoft ODBC Driver 18 for SQL Server};Server=localhost;Database=TAREA_2;Port=1433;User ID=sa;Password=283235118')
+        self.con = pyodbc.connect('DRIVER={ODBC Driver 18 for SQL Server};Server=localhost;Database=TAREA_2;Port=1433;UID=sa;PWD=Gphv2021*;TrustServerCertificate=yes')
 
     def insertUser(self,ced,nom,ape,em,cont,tel,res):
         cursor = self.con.cursor()

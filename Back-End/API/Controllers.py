@@ -25,7 +25,7 @@ def submitUser():
     user = user_service.insertUser(cedula, nombres, apellidos, email, contrasena, telefono, residencia)
     return jsonify(user.toJSON()), 201
 
-@user_blueprint.route('/<str:email>', methods=['GET'])
+@user_blueprint.route('/<string:email>', methods=['GET'])
 def get_user(email):
     user = user_service.selectUser(email)
     if user:
