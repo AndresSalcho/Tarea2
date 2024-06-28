@@ -9,12 +9,12 @@ class User:
         self.residencia =res
     
     def ToJSON(self):
-        return{
-            "cedula": self.cedula,
-            "nombres": self.nombres,
-            "apellidos": self.apellidos,
-            "email": self.email,
-            "contrasena": self.contrasena,
-            "telefono": self.telefono,
-            "residencia": self.residencia
+        return {
+            'cedula': self.cedula,
+            'nombres': self.nombres,
+            'apellidos': self.apellidos,
+            'email': self.email,
+            'contrasena': self.contrasena,
+            'telefono': self.telefono,
+            'residencia': self.residencia
         }

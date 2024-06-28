@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1, initial-scale=1.0">
     <link rel="stylesheet" href="Stylesheets/index.css">
-    <script src="../Front-End/Scripts/index.js"></script>
     <title>JDS</title>
 </head>
 <body>
@@ -12,24 +11,25 @@
         <header class="head">
             <div class="bar">
                 <ul class="list1">
-                    <li class="titulo"><p class="text">JUNTA DE DESPROTECCION SOCIAL
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    </p>
-                    </li>
-                    <li class="reg"><a href="registro.html" class="abc"><p>Registrarme</p></a></li>
-                    <li class="inicio"><a href="inicio_sesion.html" class="abc"><p>Iniciar Sesion</p></a></li>
+                    <div class="wrap">
+                        <li class="titulo"><p class="text">JUNTA DE DESPROTECCION SOCIAL</p></li>
+                        <div class="subwrap">
+                            <li class="reg"><a href="registro.html" class="abc"><p>Registrarme</p></a></li>
+                            <li class="inicio"><a href="inicio_sesion.html" class="abc"><p>Iniciar Sesion</p></a></li>
+                        </div>
+                    </div>
                 </ul>
             </div>
-        </header>
-        <div class="upperblock">
             <div class="present">
                 <h1 class="titulo">Bienvenidos a la Junta de Desprotección Social</h1>
                 <p class="textt">¡Bienvenido a nuestra página oficial! Aquí puedes verificar fácilmente si tu tiquete de lotería es ganador. Solo necesitas ingresar el mes, la serie de tu tiquete y el número de 6 dígitos. Nuestro sistema te proporcionará instantáneamente los resultados para que descubras si eres uno de los afortunados ganadores. ¡Buena suerte! <br><br></p>
             </div>
+        </header>
+        <div class="upperblock">
             <div class="form">
-                <form action="" method="post">
-                    <p class="text">Mes: <br>
-                        <select name="mes" id="" class="selec">
+                <form id="ticketForm">
+                    <p class="text">Mes: <br><br>
+                        <select id="mes" class="selec">
                             <option value="ene"><p>Enero</p></option>
                             <option value="feb"><p>Febrero</p></option>
                             <option value="mar"><p>Marzo</p></option>
@@ -44,9 +44,9 @@
                             <option value="dec"><p>Diciembre</p></option>
                         </select>
                     </p>
-                    <p class="text">Serie: <br><input type="text" name="serie"></p>
-                    <p class="text">Numero: <br><input type="text" name="num"></p>
-                    <p class="but"><button type="submit">Revisar mi resultado</button></p>
+                    <p class="text">Serie: <br><br><input type="text" id="serie" placeholder="XXX"></p>
+                    <p class="text">Numero: <br><br><input type="text" id="num" placeholder="XX"></p>
+                    <p class="but" id="button"><br><button>Revisar mi resultado</button></p>
                 </form>
             </div>
         </div>
@@ -61,5 +61,6 @@
             </p>
         </div>
     </footer>
+    <script src="Scripts/index.js"></script>
 </body>
 </html>

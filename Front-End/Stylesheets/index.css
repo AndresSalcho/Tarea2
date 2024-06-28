@@ -1,24 +1,36 @@
 html, body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
     font-family: Arial, sans-serif;
 }
 
 
 header.head{
-    background-color: rgba(0, 0, 0, 0.9);
-    background-image: url("../../Assets/backg1.jpg");
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url("../Assets/backg1.jpg");
     background-size: 100%;
     background-blend-mode: color;
     color: white;
-    display: flex;
-    justify-content: center;
-    margin: auto;
+    display: grid;
+    padding-bottom: 10%;
 }
 
-ul.list1{
+div.wrap{
     display: flex;
+    justify-content: space-evenly;
+}
+
+div.subwrap{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+div.present{
+    text-align: left;
+    margin-top: 10pt;
+    margin-right: 100pt;
+    margin-left: 50pt;
 }
 
 li{
@@ -35,6 +47,26 @@ img.imagen{
     width: 30%;
 }
 
+select{
+    font-size: medium;
+    text-align: center;
+    border-style: none;
+    border-radius: 5pt;
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.1);
+    background-color: whitesmoke;
+}
+
+input{
+    font-size: medium;
+    height: 20pt;
+    border-style: none;
+    border-radius: 5pt;
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.1);
+    background-color: whitesmoke;
+    outline-color: black;
+    text-align: center;
+}
+
 div.upperblock{
     display: block;
     justify-items: center;
@@ -47,20 +79,20 @@ div.main{
     padding-bottom: 2%;
 }
 
-div.present{
-    text-align: center;
-}
+
 
 div.form {
-    background-color: white(20, 20, 20);
-    border-style: ridge;
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.1);
     color: black;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-top: 50pt;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-bottom: 50pt;
     text-align: center;
     border-radius: 10%;
 }
@@ -70,26 +102,27 @@ footer.pie {
     color: white;
     text-align: center;
     font-size: small;
+    position: absolute;
+    width: 100%;
 }
 
 button{
-    border-style: solid;
     color: white;
-    border-color: white;
-    border-radius: 15px;
-    padding: 10px;
-    text-decoration: solid;
-    background-color: black;
-    outline: none;
+    font-size: medium;
+    width: fit-content;
+    padding: 10pt;
+    border-style: none;
+    background-color: rgb(17, 17, 17);
+    width: 100%;
     cursor: pointer;
+    border-radius: 10pt;
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.1);
 }
 
 button:hover{
-    transition: ease-in-out;
-    background-color: gray;
-    border-color: gray;
     transition: 0.5s;
-    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(100, 100, 100);
 }
 
 select.selec{
@@ -99,9 +132,4 @@ select.selec{
 
 input{
     text-align: center;
-}
-
-p.textt{
-    margin-left: 10%;
-    margin-right: 10%;
 }

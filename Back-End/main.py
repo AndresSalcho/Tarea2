@@ -4,6 +4,7 @@ from API.Controllers import user_blueprint
 from API.Controllers import ticket_blueprint
 
 app = Flask(__name__)
+app.json.sort_keys = False
 CORS(app)
 
 app.register_blueprint(user_blueprint, url_prefix='/user')
