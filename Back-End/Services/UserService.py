@@ -8,7 +8,7 @@ from Factories.User import User
 class UserService:
     def __init__(self) -> None:
         try:
-            self.con = pyodbc.connect('DRIVER={ODBC Driver 18 for SQL Server};Server=localhost;Database=TAREA_2;Port=1433;UID=sa;PWD=;TrustServerCertificate=yes')
+            self.con = pyodbc.connect('DRIVER={ODBC Driver 18 for SQL Server};Server=localhost;Database=TAREA_2;Port=1433;UID=sa;PWD=*;TrustServerCertificate=yes')
         except Exception as e:
             print("Error: " + e)
 
