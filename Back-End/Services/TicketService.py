@@ -7,7 +7,7 @@ from Factories.Ticket import Ticket
 
 class TicketService:
     def __init__(self) -> None:
-        self.con = pyodbc.connect('DRIVER={ODBC Driver 18 for SQL Server};Server=localhost;Database=TAREA_2;Port=1433;UID=sa;PWD=Gphv2021*;TrustServerCertificate=yes')
+        self.con = pyodbc.connect('DRIVER={ODBC Driver 18 for SQL Server};Server=localhost;Database=TAREA_2;Port=1433;UID=sa;PWD=;TrustServerCertificate=yes')
 
     def selectTicket(self,serie,numero):
         cursor = self.con.cursor()
